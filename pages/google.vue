@@ -1,5 +1,5 @@
 <script setup>
-const { status, signOut, data, getCsrfToken, signIn } = useAuth()
+const { status, signOut, data } = useAuth()
 const popup = ref(null);
 const loading = ref(false);
 const name = ref(data.value?.user?.name);
@@ -80,7 +80,7 @@ const success = computed(() => {
 .connect {
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: var(--blue-main);
+  background-color: #171fd6;
   color: #fff;
   cursor: pointer;
 }
@@ -90,6 +90,6 @@ const success = computed(() => {
   cursor: not-allowed;
 }
 .connect.success {
-  background-color: var(--green-approval);
+  background-color: rgb(15, 100, 15);
 }
 </style>
